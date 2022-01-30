@@ -1,0 +1,7 @@
+<h4>{{currentUser.firstName}}'s Favorite Product List</h4>
+<div *ngFor="let product of currentUser.favorites">
+  <div class="product">
+  <p>{{product.prodName}}</p>
+  <p>{{product.prodPrice | currency}}</p>
+  </div>
+</div>

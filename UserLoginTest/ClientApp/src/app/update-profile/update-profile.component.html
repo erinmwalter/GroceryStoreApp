@@ -1,0 +1,20 @@
+
+<div *ngIf="currentUser">
+  <p>Username</p>
+  <input type="text" [(ngModel)]="currentUser.userName"/>
+  <p>Password</p>
+  <input type="password" [(ngModel)]="currentUser.password"/>
+  <p>First Name</p>
+  <input type="text" [(ngModel)]="currentUser.firstName"/>
+  <p>Last Name</p>
+  <input type="text" [(ngModel)]="currentUser.lastName"/>
+  <p>Email</p>
+  <input type="text" [(ngModel)]="currentUser.email"/>
+  <p>Phone</p>
+  <input type="text" [(ngModel)]="currentUser.phone"/>
+  <button (click)=Update()>Submit</button>
+</div>
+<div *ngIf="!currentUser">
+  <p>Error, no user logged in. Please login first.</p>
+  <a [routerLink]="['/login']">Click Here To Login</a>
+</div>

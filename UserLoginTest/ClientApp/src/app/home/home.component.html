@@ -1,0 +1,7 @@
+
+<div *ngIf="!currentUser">
+<app-login-screen></app-login-screen>
+</div>
+<div *ngIf="currentUser">
+  <app-user-landing [currentUser]="currentUser"></app-user-landing>
+</div>

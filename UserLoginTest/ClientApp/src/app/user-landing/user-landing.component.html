@@ -1,0 +1,11 @@
+<div class="welcomeMessage">
+  <h4>Welcome, {{currentUser.firstName}}!</h4>
+</div>
+<div class="landingFlex">
+<div class="flexList">
+  <app-product-list></app-product-list>
+</div>
+<div class="flexList">
+    <app-favorite-list [currentUser]="currentUser"></app-favorite-list>
+</div>
+</div>
